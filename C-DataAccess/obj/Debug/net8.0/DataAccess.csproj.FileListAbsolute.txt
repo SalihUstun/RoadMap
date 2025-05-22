@@ -1,0 +1,15 @@
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/bin/Debug/net8.0/DataAccess.dll
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/bin/Debug/net8.0/DataAccess.pdb
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/obj/Debug/net8.0/DataAccess.csproj.AssemblyReference.cache
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/obj/Debug/net8.0/DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/obj/Debug/net8.0/DataAccess.AssemblyInfoInputs.cache
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/obj/Debug/net8.0/DataAccess.AssemblyInfo.cs
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/obj/Debug/net8.0/DataAccess.csproj.CoreCompileInputs.cache
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/obj/Debug/net8.0/DataAccess.sourcelink.json
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/obj/Debug/net8.0/DataAccess.dll
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/obj/Debug/net8.0/refint/DataAccess.dll
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/obj/Debug/net8.0/DataAccess.pdb
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/bin/Debug/net8.0/DataAccess.deps.json
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/bin/Debug/net8.0/DataAccess.runtimeconfig.json
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/obj/Debug/net8.0/DataAccess.genruntimeconfig.cache
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/DataAccess/obj/Debug/net8.0/ref/DataAccess.dll

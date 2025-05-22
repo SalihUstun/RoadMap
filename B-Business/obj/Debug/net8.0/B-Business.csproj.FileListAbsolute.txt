@@ -1,0 +1,11 @@
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/B-Business/bin/Debug/net8.0/B-Business.dll
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/B-Business/bin/Debug/net8.0/B-Business.pdb
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/B-Business/obj/Debug/net8.0/B-Business.csproj.AssemblyReference.cache
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/B-Business/obj/Debug/net8.0/B-Business.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/B-Business/obj/Debug/net8.0/B-Business.AssemblyInfoInputs.cache
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/B-Business/obj/Debug/net8.0/B-Business.AssemblyInfo.cs
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/B-Business/obj/Debug/net8.0/B-Business.csproj.CoreCompileInputs.cache
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/B-Business/obj/Debug/net8.0/B-Business.sourcelink.json
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/B-Business/obj/Debug/net8.0/B-Business.dll
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/B-Business/obj/Debug/net8.0/refint/B-Business.dll
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/B-Business/obj/Debug/net8.0/B-Business.pdb
