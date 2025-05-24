@@ -1,29 +1,96 @@
-.nav{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 40px 120px;
-    color: white;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 120px;
+  color: white;
+  flex-wrap: wrap;
+  position: relative;
 }
 
-.nav-logo{
-    font-family: Outfit;
-    font-size: 42px;
-    font-weight: 500;
+.nav-logo {
+  font-family: Outfit;
+  font-size: 42px;
+  font-weight: 500;
 }
 
-.nav-menu{
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 18px;
+  gap: 90px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.nav-contact {
+  border-radius: 50px;
+  padding: 10px 38px;
+  background: #fff;
+  color: #262626;
+  cursor: pointer;
+}
+
+/* Hamburger butonu gizli, sadece mobilde gösterilecek */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  justify-content: space-between;
+}
+
+.nav-toggle span {
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger açıkken X ikonuna dönüşümü */
+.nav-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .nav {
+    margin: 20px 30px;
+  }
+
+  /* Hamburger göster */
+  .nav-toggle {
     display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 18px;
-    gap:90px;
-}
+  }
 
-.nav-contact{
-    border-radius:50px;
-    padding: 10px 38px;
-    background: #fff;
-    color: #262626;
-}
+  /* Menü gizle */
+  .nav-menu {
+    overflow: hidden;
+    max-height: 0;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
 
+  /* Menü açıkken göster */
+  .nav-menu.active {
+    max-height: 300px; /* yeterince büyük bir değer */
+  }
+
+  .nav-contact {
+    margin-top: 15px;
+    padding: 8px 20px;
+  }
+}

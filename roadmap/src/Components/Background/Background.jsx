@@ -4,7 +4,7 @@ import image1 from '../../assets/mardin.jpg'
 import video2 from '../../assets/trabzon.mp4'
 import image2 from '../../assets/trabzon.jpg'
 import video3 from '../../assets/antalya.mp4'
-import image3 from '../../assets/antalya.png'
+import image3 from '../../assets/antalya.jpg'
 const Background = ({ playStatus, heroCount }) => {
   if (playStatus) {
     if (heroCount === 0) {
