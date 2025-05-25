@@ -22,9 +22,21 @@ const Navbar = () => {
       {/* Menü */}
       <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
         <li>Ana Sayfa</li>
-        <li>Seyahat Ara</li>
-        <li>Hakkımızda</li>
-        <li className='nav-contact'>İletişim</li>
+        <li>İletişim</li>
+        <li>
+          <form className="d-flex" role="search" onSubmit={(e) => e.preventDefault()}>
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Şehir"
+              aria-label="Search"
+              style={{ width: "150px", height: "30px" }}
+            />
+            <button className="btn btn-primary" type="submit">
+              Ara
+            </button>
+          </form>
+        </li>
       </ul>
     </nav>
   );

@@ -1,34 +1,18 @@
-import { useState } from "react"
-import Background from "./Components/Background/Background";
-import Navbar from "./Components/Navbar/Navbar"
-import Hero from "./Components/Hero/Hero"
-import React, { useEffect } from 'react';
-
+// App.jsx
+import React from "react";
+import HomePage from "./Pages/HomePage";
+import SearchPage from "./Pages/SearchPage/SearchPage";
 
 const App = () => {
-  let heroData = [
-    {text1:"Mardin’in Taş Evlerinde Tarih Canlanır."},
-    {text1:"Trabzon, Yeşilin ve Tutkunun Şehri."},
-    {text1:"Antalya: Güneşin ve Denizlerin Buluşması."},
-  ]
-  const [heroCount,setHeroCount] = useState(0);
-  const [playStatus,setPlayStatus] = useState(false);
+  // URL path'ini al, başındaki '/' kaldır
+  const path = window.location.pathname.slice(1).toLowerCase();
 
-  
+  // Eğer path boşsa ana sayfa
+  if (!path) {
+    return <HomePage />;
+  }
 
-  return (
-    <div>
-      <Background playStatus={playStatus}  heroCount={heroCount}/>
-      <Navbar/>
-      <Hero
-      setPlayStatus={setPlayStatus}
-      heroData={heroData[heroCount]}
-      heroCount={heroCount}
-      setHeroCount={setHeroCount}
-      playStatus={playStatus}
-      />
-    </div>
-  )
-}
+  return <SearchPage cityName={path} />;
+};
 
-export default App
+export default App;
