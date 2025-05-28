@@ -1,0 +1,37 @@
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/Entities/bin/Debug/net8.0/Entities.dll
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/Entities/bin/Debug/net8.0/Entities.pdb
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/Entities/obj/Debug/net8.0/Entities.csproj.AssemblyReference.cache
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/Entities/obj/Debug/net8.0/Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/Entities/obj/Debug/net8.0/Entities.AssemblyInfoInputs.cache
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/Entities/obj/Debug/net8.0/Entities.AssemblyInfo.cs
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/Entities/obj/Debug/net8.0/Entities.csproj.CoreCompileInputs.cache
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/Entities/obj/Debug/net8.0/Entities.sourcelink.json
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/Entities/obj/Debug/net8.0/Entities.dll
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/Entities/obj/Debug/net8.0/refint/Entities.dll
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/Entities/obj/Debug/net8.0/Entities.pdb
+/Users/salihustun/Desktop/5/RoadMap/Entities/bin/Debug/net8.0/Entities.deps.json
+/Users/salihustun/Desktop/5/RoadMap/Entities/bin/Debug/net8.0/Entities.runtimeconfig.json
+/Users/salihustun/Desktop/5/RoadMap/Entities/bin/Debug/net8.0/Entities.dll
+/Users/salihustun/Desktop/5/RoadMap/Entities/bin/Debug/net8.0/Entities.pdb
+/Users/salihustun/Desktop/5/RoadMap/Entities/obj/Debug/net8.0/Entities.csproj.AssemblyReference.cache
+/Users/salihustun/Desktop/5/RoadMap/Entities/obj/Debug/net8.0/Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihustun/Desktop/5/RoadMap/Entities/obj/Debug/net8.0/Entities.AssemblyInfoInputs.cache
+/Users/salihustun/Desktop/5/RoadMap/Entities/obj/Debug/net8.0/Entities.AssemblyInfo.cs
+/Users/salihustun/Desktop/5/RoadMap/Entities/obj/Debug/net8.0/Entities.csproj.CoreCompileInputs.cache
+/Users/salihustun/Desktop/5/RoadMap/Entities/obj/Debug/net8.0/Entities.sourcelink.json
+/Users/salihustun/Desktop/5/RoadMap/Entities/obj/Debug/net8.0/Entities.dll
+/Users/salihustun/Desktop/5/RoadMap/Entities/obj/Debug/net8.0/refint/Entities.dll
+/Users/salihustun/Desktop/5/RoadMap/Entities/obj/Debug/net8.0/Entities.pdb
+/Users/salihustun/Desktop/5/RoadMap/Entities/obj/Debug/net8.0/Entities.genruntimeconfig.cache
+/Users/salihustun/Desktop/5/RoadMap/Entities/obj/Debug/net8.0/ref/Entities.dll
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/bin/Debug/net8.0/Entities.dll
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/bin/Debug/net8.0/Entities.pdb
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/obj/Debug/net8.0/Entities.csproj.AssemblyReference.cache
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/obj/Debug/net8.0/Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/obj/Debug/net8.0/Entities.AssemblyInfoInputs.cache
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/obj/Debug/net8.0/Entities.AssemblyInfo.cs
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/obj/Debug/net8.0/Entities.csproj.CoreCompileInputs.cache
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/obj/Debug/net8.0/Entities.sourcelink.json
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/obj/Debug/net8.0/Entities.dll
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/obj/Debug/net8.0/refint/Entities.dll
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/obj/Debug/net8.0/Entities.pdb

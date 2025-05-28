@@ -1,0 +1,37 @@
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/C-DataAccess/bin/Debug/net8.0/C-DataAccess.dll
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/C-DataAccess/bin/Debug/net8.0/C-DataAccess.pdb
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.csproj.AssemblyReference.cache
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.AssemblyInfoInputs.cache
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.AssemblyInfo.cs
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.csproj.CoreCompileInputs.cache
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.sourcelink.json
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.dll
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/C-DataAccess/obj/Debug/net8.0/refint/C-DataAccess.dll
+/Users/salihustun/Desktop/adsız klasör 5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.pdb
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/bin/Debug/net8.0/C-DataAccess.deps.json
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/bin/Debug/net8.0/C-DataAccess.runtimeconfig.json
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/bin/Debug/net8.0/C-DataAccess.dll
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/bin/Debug/net8.0/C-DataAccess.pdb
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.csproj.AssemblyReference.cache
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.AssemblyInfoInputs.cache
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.AssemblyInfo.cs
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.csproj.CoreCompileInputs.cache
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.sourcelink.json
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.dll
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/obj/Debug/net8.0/refint/C-DataAccess.dll
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.pdb
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/obj/Debug/net8.0/C-DataAccess.genruntimeconfig.cache
+/Users/salihustun/Desktop/5/RoadMap/C-DataAccess/obj/Debug/net8.0/ref/C-DataAccess.dll
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/bin/Debug/net8.0/C-DataAccess.dll
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/bin/Debug/net8.0/C-DataAccess.pdb
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/obj/Debug/net8.0/C-DataAccess.csproj.AssemblyReference.cache
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/obj/Debug/net8.0/C-DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/obj/Debug/net8.0/C-DataAccess.AssemblyInfoInputs.cache
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/obj/Debug/net8.0/C-DataAccess.AssemblyInfo.cs
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/obj/Debug/net8.0/C-DataAccess.csproj.CoreCompileInputs.cache
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/obj/Debug/net8.0/C-DataAccess.sourcelink.json
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/obj/Debug/net8.0/C-DataAccess.dll
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/obj/Debug/net8.0/refint/C-DataAccess.dll
+/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/obj/Debug/net8.0/C-DataAccess.pdb
