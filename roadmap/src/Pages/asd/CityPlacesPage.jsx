@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const GEOAPIFY_API_KEY = "3a43c7b5608544c7936fbcca29744dd3"; 
-const OPENWEATHER_API_KEY = "bb838b8c4bd92557d2380fb405cb5d2a";  
+const OPENWEATHER_API_KEY = 'bb838b8c4bd92557d2380fb405cb5d2a';  
 
 const CityPlacesPage = () => {
   const [city, setCity] = useState("");
@@ -15,7 +15,7 @@ const CityPlacesPage = () => {
     const url = `https://api.geoapify.com/v1/geocode/search?text=${encodeURIComponent(
       cityName
     )}&apiKey=${GEOAPIFY_API_KEY}`;
-
+    const sehir = encodeURIComponent(cityName);
     const res = await axios.get(url);
     const result = res.data.features[0];
     if (result) {
@@ -65,7 +65,8 @@ const CityPlacesPage = () => {
 
   // Yeni: Hava durumu API çağrısı
   const fetchWeather = async (lat, lon) => {
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${OPENWEATHER_API_KEY}&units=metric&lang=tr`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${sehir}&appid=bb838b8c4bd92557d2380fb405cb5d2a&units=metric&lang=tr`;
+    
     const res = await axios.get(url);
     return {
       temp: res.data.main.temp,
@@ -73,7 +74,7 @@ const CityPlacesPage = () => {
       icon: `https://openweathermap.org/img/wn/${res.data.weather[0].icon}@2x.png`,
     };
   };
-
+  
   const handleSearch = async () => {
     try {
       setLoading(true);

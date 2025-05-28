@@ -1,6 +1,7 @@
 // App.jsx
 import React from "react";
 import HomePage from "./Pages/HomePage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SearchPage from "./Pages/SearchPage/SearchPage";
 import CityPlacesPage from "./Pages/asd/CityPlacesPage";
 
@@ -17,7 +18,13 @@ const App = () => {
     return <CityPlacesPage />;
   }
 
-  return <SearchPage cityName={path} />;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/city/:cityName" element={<SearchPage />} />
+      </Routes>
+    </Router>
+  );
 };
 
 
