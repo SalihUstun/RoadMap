@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/Entities.csproj": {}
+    "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/Entities/Entities.csproj": {}
   },
   "projects": {
-    "/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/Entities.csproj": {
+    "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/Entities/Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/Entities.csproj",
+        "projectUniqueName": "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/Entities/Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/Entities.csproj",
+        "projectPath": "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/Entities/Entities.csproj",
         "packagesPath": "/Users/salihustun/.nuget/packages/",
-        "outputPath": "/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/obj/",
+        "outputPath": "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/salihustun/.nuget/NuGet/NuGet.Config"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {

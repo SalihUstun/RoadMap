@@ -2,6 +2,7 @@
 import React from "react";
 import HomePage from "./Pages/HomePage";
 import SearchPage from "./Pages/SearchPage/SearchPage";
+import CityPlacesPage from "./Pages/asd/CityPlacesPage";
 
 const App = () => {
   // URL path'ini al, başındaki '/' kaldır
@@ -12,7 +13,12 @@ const App = () => {
     return <HomePage />;
   }
 
+  if (path === "sehir-gezilecek-yerler") {
+    return <CityPlacesPage />;
+  }
+
   return <SearchPage cityName={path} />;
 };
+
 
 export default App;

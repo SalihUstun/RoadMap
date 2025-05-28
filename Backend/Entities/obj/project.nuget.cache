@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ULJkOyVE4p+GaiJWXqmNPZGcpaSPeVyFHxkgGSzLfcvl/iLJ9Zvs3LZiQ+OzHptkqztIxIT/a+Bn/dg23qpA+g==",
+  "dgSpecHash": "cjK1YimBAwJzrKtomR2koVbISgiaVk3aEBW9iIjHSneJuA4hroXlDLi9yX/Fbp9pTd2lT8OHqpXhRq629d2wsA==",
   "success": true,
-  "projectFilePath": "/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/Entities/Entities.csproj",
+  "projectFilePath": "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/Entities/Entities.csproj",
   "expectedPackageFiles": [
     "/Users/salihustun/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/salihustun/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.0/microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/C-DataAccess.csproj": {}
+    "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/C-DataAccess/C-DataAccess.csproj": {}
   },
   "projects": {
-    "/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/C-DataAccess.csproj": {
+    "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/C-DataAccess/C-DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/C-DataAccess.csproj",
+        "projectUniqueName": "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/C-DataAccess/C-DataAccess.csproj",
         "projectName": "C-DataAccess",
-        "projectPath": "/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/C-DataAccess.csproj",
+        "projectPath": "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/C-DataAccess/C-DataAccess.csproj",
         "packagesPath": "/Users/salihustun/.nuget/packages/",
-        "outputPath": "/Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/C-DataAccess/obj/",
+        "outputPath": "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/C-DataAccess/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/salihustun/.nuget/NuGet/NuGet.Config"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
