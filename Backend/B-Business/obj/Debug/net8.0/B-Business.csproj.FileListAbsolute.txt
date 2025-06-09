@@ -40,3 +40,23 @@
 /Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/B-Business/obj/Debug/net8.0/B-Business.dll
 /Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/B-Business/obj/Debug/net8.0/refint/B-Business.dll
 /Users/salihustun/Desktop/Yazılım müh/RoadMap/Backend/B-Business/obj/Debug/net8.0/B-Business.pdb
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/bin/Debug/net8.0/B-Business.deps.json
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/bin/Debug/net8.0/B-Business.runtimeconfig.json
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/bin/Debug/net8.0/B-Business.dll
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/bin/Debug/net8.0/B-Business.pdb
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/bin/Debug/net8.0/C-DataAccess.dll
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/bin/Debug/net8.0/Entities.dll
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/bin/Debug/net8.0/C-DataAccess.pdb
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/bin/Debug/net8.0/Entities.pdb
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/obj/Debug/net8.0/B-Business.csproj.AssemblyReference.cache
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/obj/Debug/net8.0/B-Business.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/obj/Debug/net8.0/B-Business.AssemblyInfoInputs.cache
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/obj/Debug/net8.0/B-Business.AssemblyInfo.cs
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/obj/Debug/net8.0/B-Business.csproj.CoreCompileInputs.cache
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/obj/Debug/net8.0/B-Business.sourcelink.json
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/obj/Debug/net8.0/B-Business.csproj.Up2Date
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/obj/Debug/net8.0/B-Business.dll
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/obj/Debug/net8.0/refint/B-Business.dll
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/obj/Debug/net8.0/B-Business.pdb
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/obj/Debug/net8.0/B-Business.genruntimeconfig.cache
+/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/obj/Debug/net8.0/ref/B-Business.dll

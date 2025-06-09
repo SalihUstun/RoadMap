@@ -1,41 +1,102 @@
-import React, { useState } from 'react';
-import './Navbar.css';
+import React, { useState, useEffect } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase";
+import { useNavigate } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [cities, setCities] = useState([]);
+  const [searchText, setSearchText] = useState("");
+  const [filteredCities, setFilteredCities] = useState([]);
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchCities = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, "cities"));
+        const citiesArray = querySnapshot.docs.map(doc => {
+          return { id: doc.id, ...doc.data() };
+        });
+        setCities(citiesArray);
+      } catch (err) {
+        console.error("Şehirler alınamadı:", err);
+      }
+    };
+
+    fetchCities();
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(prev => !prev);
+  };
+
+  const handleSearchChange = (e) => {
+    const value = e.target.value.toLowerCase();
+    setSearchText(value);
+    if (value === "") {
+      setFilteredCities([]);
+      return;
+    }
+    const filtered = cities.filter(city =>
+      city.name.toLowerCase().includes(value)
+    );
+    setFilteredCities(filtered);
+  };
+
+  const handleCitySelect = (cityName) => {
+    setSearchText(cityName);
+    setFilteredCities([]);
+  };
+
+  const handleSearchClick = () => {
+    if (searchText.trim() !== "") {
+      navigate(`/city/${searchText.trim()}`);
+    }
   };
 
   return (
     <nav className="nav">
       <div className="nav-logo">RoadMap</div>
 
-      {/* Hamburger ikon */}
-      <div className={`nav-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+      <div className={`nav-toggle ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      {/* Menü */}
-      <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
+      <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
         <li>Ana Sayfa</li>
         <li>İletişim</li>
-        <li>
-          <form className="d-flex" role="search" onSubmit={(e) => e.preventDefault()}>
+        <li style={{ position: "relative" }}>
+          <div className="d-flex" role="search">
             <input
               className="form-control me-2"
               type="search"
               placeholder="Şehir"
-              aria-label="Search"
-              style={{ width: "150px", height: "30px" }}
+              value={searchText}
+              onChange={handleSearchChange}
+              style={{ width: "180px", height: "30px" }}
+              autoComplete="off"
             />
-            <button className="btn btn-primary" type="submit">
+            <button className="btn btn-primary" type="button" onClick={handleSearchClick}>
               Ara
             </button>
-          </form>
+          </div>
+
+          {filteredCities.length > 0 && (
+            <ul className="search-results">
+              {filteredCities.map(city => (
+                <li
+                  key={city.id}
+                  onClick={() => handleCitySelect(city.name)}
+                >
+                  {city.name}
+                </li>
+              ))}
+            </ul>
+          )}
         </li>
       </ul>
     </nav>

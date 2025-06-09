@@ -3143,11 +3143,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/A-server/A-server.csproj",
+      "projectUniqueName": "/Users/salihustun/Desktop/aaa/RoadMap/Backend/A-server/A-server.csproj",
       "projectName": "A-server",
-      "projectPath": "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/A-server/A-server.csproj",
+      "projectPath": "/Users/salihustun/Desktop/aaa/RoadMap/Backend/A-server/A-server.csproj",
       "packagesPath": "/Users/salihustun/.nuget/packages/",
-      "outputPath": "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/A-server/obj/",
+      "outputPath": "/Users/salihustun/Desktop/aaa/RoadMap/Backend/A-server/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/salihustun/.nuget/NuGet/NuGet.Config"
@@ -3162,14 +3162,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/B-Business/B-Business.csproj": {
-              "projectPath": "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/B-Business/B-Business.csproj"
+            "/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/B-Business.csproj": {
+              "projectPath": "/Users/salihustun/Desktop/aaa/RoadMap/Backend/B-Business/B-Business.csproj"
             },
-            "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/C-DataAccess/C-DataAccess.csproj": {
-              "projectPath": "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/C-DataAccess/C-DataAccess.csproj"
+            "/Users/salihustun/Desktop/aaa/RoadMap/Backend/C-DataAccess/C-DataAccess.csproj": {
+              "projectPath": "/Users/salihustun/Desktop/aaa/RoadMap/Backend/C-DataAccess/C-DataAccess.csproj"
             },
-            "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/Entities/Entities.csproj": {
-              "projectPath": "/Users/salihustun/Desktop/PROJELER/Yazılım müh/RoadMap/Backend/Entities/Entities.csproj"
+            "/Users/salihustun/Desktop/aaa/RoadMap/Backend/Entities/Entities.csproj": {
+              "projectPath": "/Users/salihustun/Desktop/aaa/RoadMap/Backend/Entities/Entities.csproj"
             }
           }
         }
@@ -3178,11 +3178,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
