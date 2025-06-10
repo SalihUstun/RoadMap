@@ -8,3 +8,19 @@ body{
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.weather-box img {
+  vertical-align: middle;
+}
+
+.weather-box p {
+  margin: 5px 0;
+}
+.weather-box {
+  background-color: #8d6161; 
+  color: #fff; 
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(118, 71, 71, 0.6);
+  max-width: 400px;
+  margin-top: 20px;
+}
