@@ -98,6 +98,7 @@ const SearchPage = () => {
           return { ...place, ...wiki };
         })
       );
+
       setPlaces(enrichedPlaces);
     } catch (error) {
       console.error("Veri alınırken hata oluştu:", error);
@@ -148,7 +149,12 @@ const SearchPage = () => {
 
       {/* Dinamik Places */}
       <div className="container">
-        {places.map((place, idx) => (
+        {places.filter(
+        (place) =>
+          place.description !== "Açıklama bulunamadı." ||
+          place.image !== null
+        )
+        .map((place, idx) => (
           <div className="row align-items-center my-5" key={idx}>
             <div className="col-md-5 text-center mb-3 mb-md-0">
               <img
