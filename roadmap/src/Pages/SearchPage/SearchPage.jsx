@@ -14,7 +14,7 @@ const SearchPage = () => {
   const [cityInfo, setCityInfo] = useState(null);
   const [places, setPlaces] = useState([]);
   const [weather, setWeather] = useState(null);
-  const [coordinates, setCoordinates] = useState(null); // 🔥 HATAYI BURAYA ALDIK
+  const [coordinates, setCoordinates] = useState(null); 
 
   useEffect(() => {
     if (cityName) {
@@ -90,7 +90,7 @@ const SearchPage = () => {
         fetchCoordinates(city),
       ]);
       setCityInfo(info);
-      setCoordinates(coords); // 🔥 Burada da kaydet
+      setCoordinates(coords); 
       await fetchWeather(city);
 
       const geoPlaces = await fetchPlaces(coords.lat, coords.lon);
