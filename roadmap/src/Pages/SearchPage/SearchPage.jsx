@@ -14,7 +14,10 @@ const SearchPage = () => {
   const [cityInfo, setCityInfo] = useState(null);
   const [places, setPlaces] = useState([]);
   const [weather, setWeather] = useState(null);
-  const [coordinates, setCoordinates] = useState(null); 
+  const [coordinates, setCoordinates] = useState(null);
+
+  const capitalize = (text) =>
+    text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
 
   useEffect(() => {
     if (cityName) {
@@ -39,7 +42,9 @@ const SearchPage = () => {
   };
 
   const fetchCoordinates = async (city) => {
-    const url = `https://api.geoapify.com/v1/geocode/search?text=${encodeURIComponent(city)}&apiKey=${GEOAPIFY_API_KEY}`;
+    const url = `https://api.geoapify.com/v1/geocode/search?text=${encodeURIComponent(
+      city
+    )}&apiKey=${GEOAPIFY_API_KEY}`;
     const res = await axios.get(url);
     const result = res.data.features[0];
     if (result) {
@@ -49,19 +54,6 @@ const SearchPage = () => {
       };
     }
     throw new Error("Koordinatlar bulunamadı.");
-  };
-
-  const fetchPlaces = async (lat, lon) => {
-    const categories = ["tourism.attraction", "entertainment.museum", "leisure.park"];
-    const url = `https://api.geoapify.com/v2/places?categories=${categories.join(
-      ","
-    )}&filter=circle:${lon},${lat},50000&limit=5&apiKey=${GEOAPIFY_API_KEY}`;
-    const res = await axios.get(url);
-    return res.data.features.map((place) => ({
-      name: place.properties.name,
-      lat: place.properties.lat,
-      lon: place.properties.lon,
-    }));
   };
 
   const fetchWeather = async (city) => {
@@ -83,6 +75,23 @@ const SearchPage = () => {
     }
   };
 
+  const fetchPlaces = async (lat, lon) => {
+    const categories = [
+      "tourism.attraction",
+      "entertainment.museum",
+      "leisure.park",
+    ];
+    const url = `https://api.geoapify.com/v2/places?categories=${categories.join(
+      ","
+    )}&filter=circle:${lon},${lat},50000&limit=5&apiKey=${GEOAPIFY_API_KEY}`;
+    const res = await axios.get(url);
+    return res.data.features.map((place) => ({
+      name: place.properties.name,
+      lat: place.properties.lat,
+      lon: place.properties.lon,
+    }));
+  };
+
   const fetchData = async (city) => {
     try {
       const [info, coords] = await Promise.all([
@@ -90,7 +99,7 @@ const SearchPage = () => {
         fetchCoordinates(city),
       ]);
       setCityInfo(info);
-      setCoordinates(coords); 
+      setCoordinates(coords);
       await fetchWeather(city);
 
       const geoPlaces = await fetchPlaces(coords.lat, coords.lon);
@@ -116,7 +125,7 @@ const SearchPage = () => {
           <div className="row align-items-center">
             <div className="col-md-7 mb-4 mb-md-0">
               <h2 className="fw-bold">
-                {cityName.charAt(0).toUpperCase() + cityName.slice(1)}
+                {capitalize(cityName)}
                 <hr />
               </h2>
               <p className="lead">{cityInfo.description}</p>
@@ -143,7 +152,7 @@ const SearchPage = () => {
             <div className="col-md-5 text-center">
               <img
                 src={cityInfo.image || defaultImage}
-                alt={cityName}
+                alt={capitalize(cityName)}
                 className="fixed-img-size"
                 onError={(e) => (e.currentTarget.src = defaultImage)}
               />
@@ -156,8 +165,7 @@ const SearchPage = () => {
         {places
           .filter(
             (place) =>
-              place.description !== "Açıklama bulunamadı." ||
-              place.image !== null
+              place.description !== "Açıklama bulunamadı." || place.image !== null
           )
           .map((place, idx) => (
             <div className="row align-items-center my-5" key={idx}>
@@ -179,12 +187,14 @@ const SearchPage = () => {
 
         {coordinates && (
           <div className="container my-5">
-            <h3 className="text-center mb-3">{cityName} Haritası</h3>
-            <CityMap
-              lat={coordinates.lat}
-              lon={coordinates.lon}
-              city={cityName}
-            />
+            <div className="map-frame">
+              <h3 className="text-center mb-3">{capitalize(cityName)} Haritası</h3>
+              <CityMap
+                lat={coordinates.lat}
+                lon={coordinates.lon}
+                city={capitalize(cityName)}
+              />
+            </div>
           </div>
         )}
       </div>
