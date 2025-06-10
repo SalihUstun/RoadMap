@@ -4,6 +4,7 @@ import axios from "axios";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./SearchPage.css";
 import defaultImage from "../../assets/default.jpg";
+import CityMap from "../../Components/CityMap/CityMap";
 
 const GEOAPIFY_API_KEY = "3a43c7b5608544c7936fbcca29744dd3";
 const OPENWEATHERMAP_API_KEY = "bb838b8c4bd92557d2380fb405cb5d2a";
@@ -13,6 +14,7 @@ const SearchPage = () => {
   const [cityInfo, setCityInfo] = useState(null);
   const [places, setPlaces] = useState([]);
   const [weather, setWeather] = useState(null);
+  const [coordinates, setCoordinates] = useState(null); // 🔥 HATAYI BURAYA ALDIK
 
   useEffect(() => {
     if (cityName) {
@@ -83,15 +85,15 @@ const SearchPage = () => {
 
   const fetchData = async (city) => {
     try {
-      const [info, coordinates] = await Promise.all([
+      const [info, coords] = await Promise.all([
         fetchWikipediaInfo(city),
         fetchCoordinates(city),
       ]);
       setCityInfo(info);
-
+      setCoordinates(coords); // 🔥 Burada da kaydet
       await fetchWeather(city);
 
-      const geoPlaces = await fetchPlaces(coordinates.lat, coordinates.lon);
+      const geoPlaces = await fetchPlaces(coords.lat, coords.lon);
       const enrichedPlaces = await Promise.all(
         geoPlaces.map(async (place) => {
           const wiki = await fetchWikipediaInfo(place.name);
@@ -109,7 +111,6 @@ const SearchPage = () => {
     <>
       <Navbar />
 
-      {/* Şehir Bilgisi ve Hava Durumu */}
       {cityInfo && (
         <div className="container my-5">
           <div className="row align-items-center">
@@ -119,20 +120,24 @@ const SearchPage = () => {
                 <hr />
               </h2>
               <p className="lead">{cityInfo.description}</p>
-                {weather && (
-                  <div className="weather-box d-flex align-items-center">
-                    <img src={weather.icon} alt={weather.description} style={{ width: 60, height: 60 }} />
-                    <div className="ms-3">
-                      <p className="mb-0">
-                        <strong>Sıcaklık:</strong> {weather.temp}°C
-                      </p>
-                      <p className="mb-0">
-                        <strong>Nem:</strong> {weather.humidity}%
-                      </p>
-                      <p className="mb-0 text-capitalize">{weather.description}</p>
-                    </div>
+              {weather && (
+                <div className="weather-box d-flex align-items-center">
+                  <img
+                    src={weather.icon}
+                    alt={weather.description}
+                    style={{ width: 60, height: 60 }}
+                  />
+                  <div className="ms-3">
+                    <p className="mb-0">
+                      <strong>Sıcaklık:</strong> {weather.temp}°C
+                    </p>
+                    <p className="mb-0">
+                      <strong>Nem:</strong> {weather.humidity}%
+                    </p>
+                    <p className="mb-0 text-capitalize">{weather.description}</p>
                   </div>
-                )}
+                </div>
+              )}
             </div>
 
             <div className="col-md-5 text-center">
@@ -147,30 +152,41 @@ const SearchPage = () => {
         </div>
       )}
 
-      {/* Dinamik Places */}
       <div className="container">
-        {places.filter(
-        (place) =>
-          place.description !== "Açıklama bulunamadı." ||
-          place.image !== null
-        )
-        .map((place, idx) => (
-          <div className="row align-items-center my-5" key={idx}>
-            <div className="col-md-5 text-center mb-3 mb-md-0">
-              <img
-                src={place.image || defaultImage}
-                alt={place.name}
-                className="fixed-img-size"
-                onError={(e) => (e.currentTarget.src = defaultImage)}
-              />
+        {places
+          .filter(
+            (place) =>
+              place.description !== "Açıklama bulunamadı." ||
+              place.image !== null
+          )
+          .map((place, idx) => (
+            <div className="row align-items-center my-5" key={idx}>
+              <div className="col-md-5 text-center mb-3 mb-md-0">
+                <img
+                  src={place.image || defaultImage}
+                  alt={place.name}
+                  className="fixed-img-size"
+                  onError={(e) => (e.currentTarget.src = defaultImage)}
+                />
+              </div>
+              <div className="col-md-7">
+                <h3 className="fw-bold">{place.name}</h3>
+                <hr />
+                <p className="lead">{place.description}</p>
+              </div>
             </div>
-            <div className="col-md-7">
-              <h3 className="fw-bold">{place.name}</h3>
-              <hr />
-              <p className="lead">{place.description}</p>
-            </div>
+          ))}
+
+        {coordinates && (
+          <div className="container my-5">
+            <h3 className="text-center mb-3">{cityName} Haritası</h3>
+            <CityMap
+              lat={coordinates.lat}
+              lon={coordinates.lon}
+              city={cityName}
+            />
           </div>
-        ))}
+        )}
       </div>
     </>
   );

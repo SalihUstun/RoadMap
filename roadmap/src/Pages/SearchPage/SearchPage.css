@@ -24,3 +24,7 @@ body{
   max-width: 400px;
   margin-top: 20px;
 }
+.svg-map-container svg path {
+  cursor: pointer;
+  transition: fill 0.2s;
+}
