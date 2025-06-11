@@ -19,22 +19,22 @@ const ContactPage = () => {
             <p><strong>Proje Türü:</strong> Şehir Bilgi ve Gezi Rehberi Uygulaması</p>
             <p><strong>Geliştirenler ve İletişim Adresleri</strong></p>
             <ul>
+               <li>
+                Gökhan Şentürk –
+                <a href="mailto:gokhan.senturk@example.com" className="ms-2 text-decoration-none">
+                  senturk44gokhan@gmail.com
+                </a>
+              </li>
               <li>
                 Salih Üstün –
                 <a href="mailto:salih.ustun@example.com" className="ms-2 text-decoration-none">
-                  salih.ustun@gmail.com
+                  m.salih5765@gmail.com
                 </a>
               </li>
               <li>
                 Emre Gülek –
                 <a href="mailto:emre.gulek@example.com" className="ms-2 text-decoration-none">
                   emregulek77@gmail.com
-                </a>
-              </li>
-              <li>
-                Gökhan Şentürk –
-                <a href="mailto:gokhan.senturk@example.com" className="ms-2 text-decoration-none">
-                  gokhan.senturk@gmail.com
                 </a>
               </li>
             </ul>
