@@ -1,0 +1,9 @@
+.container {
+  max-width: 800px;
+}
+ul {
+  padding-left: 20px;
+}
+ul li {
+  margin-bottom: 5px;
+}

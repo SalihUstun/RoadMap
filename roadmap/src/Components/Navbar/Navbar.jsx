@@ -53,12 +53,22 @@ const Navbar = () => {
   const handleSearchClick = () => {
     if (searchText.trim() !== "") {
       navigate(`/city/${searchText.trim()}`);
+      setMenuOpen(false); 
     }
   };
 
   return (
     <nav className="nav">
-      <div className="nav-logo">RoadMap</div>
+      <div
+        className="nav-logo"
+        onClick={() => {
+          navigate("/");
+          setMenuOpen(false); 
+        }}
+        style={{ cursor: "pointer" }}
+      >
+        RoadMap
+      </div>
 
       <div className={`nav-toggle ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
         <span></span>
@@ -67,38 +77,58 @@ const Navbar = () => {
       </div>
 
       <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
-        <li>Ana Sayfa</li>
-        <li>İletişim</li>
-        <li style={{ position: "relative" }}>
-          <div className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Şehir"
-              value={searchText}
-              onChange={handleSearchChange}
-              style={{ width: "180px", height: "30px" }}
-              autoComplete="off"
-            />
-            <button className="btn btn-primary" type="button" onClick={handleSearchClick}>
-              Ara
-            </button>
-          </div>
+  <li
+    onClick={() => {
+      navigate("/");
+      setMenuOpen(false);
+    }}
+    style={{ cursor: "pointer" }}
+  >
+    Ana Sayfa
+  </li>
 
-          {filteredCities.length > 0 && (
-            <ul className="search-results">
-              {filteredCities.map(city => (
-                <li
-                  key={city.id}
-                  onClick={() => handleCitySelect(city.name)}
-                >
-                  {city.name}
-                </li>
-              ))}
-            </ul>
-          )}
-        </li>
+  <li
+  onClick={() => {
+    navigate("/iletisim");
+    setMenuOpen(false);
+  }}
+  style={{ cursor: "pointer" }}
+>
+  Hakkımızda
+</li>
+
+
+  <li style={{ position: "relative" }}>
+    <div className="d-flex" role="search">
+      <input
+        className="form-control me-2"
+        type="search"
+        placeholder="Şehir"
+        value={searchText}
+        onChange={handleSearchChange}
+        style={{ width: "180px", height: "30px" }}
+        autoComplete="off"
+      />
+      <button className="btn btn-primary" type="button" onClick={handleSearchClick}>
+        Ara
+      </button>
+    </div>
+
+    {filteredCities.length > 0 && (
+      <ul className="search-results">
+        {filteredCities.map(city => (
+          <li
+            key={city.id}
+            onClick={() => handleCitySelect(city.name)}
+          >
+            {city.name}
+          </li>
+        ))}
       </ul>
+    )}
+  </li>
+</ul>
+
     </nav>
   );
 };
