@@ -52,7 +52,7 @@ const Navbar = () => {
 
   const handleSearchClick = () => {
     if (searchText.trim() !== "") {
-      navigate(`/city/${searchText.trim()}`);
+      window.location.href = `/city/${searchText.trim()}`;
       setMenuOpen(false); 
     }
   };
